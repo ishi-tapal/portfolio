@@ -17,9 +17,19 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "@tsparticles/basic": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
     "framer-motion": "^12.23.24",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^10.0.0",
+    "react-slick": "^0.31.0",
+    "react-typed": "^2.0.12",
+    "slick-carousel": "^1.8.1",
+    "tsparticles": "^3.9.1",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
