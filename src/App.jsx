@@ -152,7 +152,7 @@ const experience = [
   {
     title: "Pentester - II",
     company: "TalaKunchi Networks Pvt Ltd – Mumbai, Maharashtra",
-    date: "Apr 2026 – Present",
+    date: "Apr 2026 – Presently working",
     points: [
       "Application Security Engineer with experience in Vulnerability Assessment and Penetration Testing of web applications and APIs, specializing in identifying, validating, and reporting security vulnerabilities across enterprise applications. Experienced in performing manual and automated security assessments aligned with OWASP Top 10, OWASP API Security Top 10, and Secure SDLC practices. Proficient in authentication and authorization testing, session management, access control validation, business logic testing, API security testing, vulnerability verification, risk assessment, and remediation guidance. Adept at collaborating with development teams to strengthen application security throughout the software development lifecycle. Hands-on experience with Burp Suite, Python, Java, JavaScript, Node.js, Spring Boot, React, AngularJS, Postman, Git, Splunk, and Elasticsearch to analyze application architecture and support comprehensive security assessments"
   ],
