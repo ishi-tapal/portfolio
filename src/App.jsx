@@ -144,16 +144,18 @@ const experience = [
   {
     title: "Security Engineer",
     company: "Jio Platforms Ltd. – Navi Mumbai, Maharashtra",
-    date: "Dec 2023 – Present",
+    date: "Dec 2023 – Mar 2026",
     points: [
-      // "Built secure full-stack apps with React.js, Node.js, Spring Boot, and Material UI, reducing vulnerabilities by 35%.",
-      // "Strengthened access control using RBAC, OAuth 2.0, and MFA, cutting unauthorized access incidents by up to 60%.",
-      // "Improved security visibility and alert accuracy in ELK dashboards by 25%.",
-      // "Automated data retrieval and alert enrichment in threat detection tools, speeding up response by 25%.",
-      // "Conducted security code reviews and implemented encryption for full compliance with data protection standards.",
-      // "Hardened APIs with token-based auth, rate limiting, and TLS, improving performance and security.",
       "Developed and secured full-stack applications using React.js, Node.js, Spring Boot, and Material UI with a strong focus on secure coding practices. Enhanced access control through RBAC, OAuth 2.0, and MFA, improved visibility and accuracy of security alerts using the ELK Stack, and automated data retrieval and alert enrichment to streamline threat detection. Conducted comprehensive security code reviews, implemented encryption to ensure data protection compliance, and hardened APIs with token-based authentication, rate limiting, and TLS for robust performance and security.",
     ],
+  },
+  {
+    title: "Pentester - II",
+    company: "TalaKunchi Networks Pvt Ltd – Mumbai, Maharashtra",
+    date: "Apr 2026 – Present",
+    points: [
+      "Application Security Engineer with experience in Vulnerability Assessment and Penetration Testing of web applications and APIs, specializing in identifying, validating, and reporting security vulnerabilities across enterprise applications. Experienced in performing manual and automated security assessments aligned with OWASP Top 10, OWASP API Security Top 10, and Secure SDLC practices. Proficient in authentication and authorization testing, session management, access control validation, business logic testing, API security testing, vulnerability verification, risk assessment, and remediation guidance. Adept at collaborating with development teams to strengthen application security throughout the software development lifecycle. Hands-on experience with Burp Suite, Python, Java, JavaScript, Node.js, Spring Boot, React, AngularJS, Postman, Git, Splunk, and Elasticsearch to analyze application architecture and support comprehensive security assessments"
+  ],
   },
 ];
 
