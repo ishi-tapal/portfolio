@@ -51,9 +51,9 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-//import image from "./assets/rough-black-lines-textured-background.jpg";
 import ParticleBackground from "./Particle";
 import Typewriter from "typewriter-effect";
+import profileImg from "./assets/profile.jpeg"; 
 //import Typed from "react-typed";
 
 //import emailjs from "emailjs-com";
@@ -137,7 +137,7 @@ const certifications = [
   "Network Security Associate (NSE 1-3) — Fortinet",
   "Splunk Core Fundamentals — Splunk Training",
   "Cyber Security & Ethical Hacking — IIT Kanpur (Summer)",
-   "Martian Internship Program — Persistent Systems",
+  "Martian Internship Program — Persistent Systems",
 ];
 
 const experience = [
@@ -146,8 +146,8 @@ const experience = [
     company: "TalaKunchi Networks Pvt Ltd – Mumbai, Maharashtra",
     date: "Apr 2026 – Present",
     points: [
-      "Application Security Engineer with experience in Vulnerability Assessment and Penetration Testing of web applications and APIs, specializing in identifying, validating, and reporting security vulnerabilities across enterprise applications. Experienced in performing manual and automated security assessments aligned with OWASP Top 10, OWASP API Security Top 10, and Secure SDLC practices. Proficient in authentication and authorization testing, session management, access control validation, business logic testing, API security testing, vulnerability verification, risk assessment, and remediation guidance. Adept at collaborating with development teams to strengthen application security throughout the software development lifecycle. Hands-on experience with Burp Suite, Python, Java, JavaScript, Node.js, Spring Boot, React, AngularJS, Postman, Git, Splunk, and Elasticsearch to analyze application architecture and support comprehensive security assessments"
-  ],
+      "Application Security Engineer with experience in Vulnerability Assessment and Penetration Testing of web applications and APIs, specializing in identifying, validating, and reporting security vulnerabilities across enterprise applications. Experienced in performing manual and automated security assessments aligned with OWASP Top 10, OWASP API Security Top 10, and Secure SDLC practices. Proficient in authentication and authorization testing, session management, access control validation, business logic testing, API security testing, vulnerability verification, risk assessment, and remediation guidance. Adept at collaborating with development teams to strengthen application security throughout the software development lifecycle. Hands-on experience with Burp Suite, Python, Java, JavaScript, Node.js, Spring Boot, React, AngularJS, Postman, Git, Splunk, and Elasticsearch to analyze application architecture and support comprehensive security assessments",
+    ],
   },
   {
     title: "Security Engineer",
@@ -427,58 +427,64 @@ export default function App() {
         >
           <CardContent>
             {/* HERO */}
+            {/* Hero content */}
             <Box
               sx={{
                 position: "relative",
-                height: { xs: 320, md: 400 },
-                overflow: "hidden",
-                mt: 3,
-                borderRadius: 3,
+                zIndex: 3,
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                px: 3,
               }}
             >
-              {/* animated gradient */}
-              <Box sx={gradientSx} />
-
-              {/* subtle texture image (low opacity) */}
-              <Box
-                sx={{
-                  position: "absolute",
-                  inset: 0,
-                  //backgroundImage: `url(${image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  opacity: 0.06,
-                  zIndex: 1,
-                }}
-              />
-
-              {/* dark overlay for contrast */}
-              <Box
-                sx={{
-                  position: "absolute",
-                  inset: 0,
-                  bgcolor: "rgba(0,0,0,0.35)",
-                  zIndex: 2,
-                }}
-              />
-
-              {/* Hero content */}
-              <Box
-                sx={{
-                  position: "relative",
-                  zIndex: 3,
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  px: 3,
-                }}
+              <motion.div
+                initial={{ opacity: 0, y: -18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
               >
-                <motion.div
-                  initial={{ opacity: 0, y: -18 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.9 }}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
                 >
+                  {/* Profile Image */}
+                  <Box
+                    component="img"
+                    src={profileImg}
+                    alt="Ishita Pal"
+                    sx={{
+                      width: { xs: 120, md: 170 },
+                      height: { xs: 120, md: 170 },
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                      objectPosition: "center 10%", 
+                      border: `4px solid ${theme.accent}`,
+                      p: "4px",
+                      mb: 3,
+
+                      boxShadow: `
+            0 0 12px ${theme.accent},
+            0 0 30px rgba(0,229,255,0.45),
+            0 0 60px rgba(0,229,255,0.25)
+          `,
+
+                      transition: "0.3s ease",
+
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                        boxShadow: `
+              0 0 18px ${theme.accent},
+              0 0 40px rgba(0,229,255,0.6),
+              0 0 80px rgba(0,229,255,0.35)
+            `,
+                      },
+                    }}
+                  />
+
                   <Typography
                     variant="h3"
                     sx={{
@@ -488,23 +494,14 @@ export default function App() {
                       mb: 1,
                     }}
                   >
-                    Hi, I’m Ishita Pal
+                    Hi, I'm Ishita Pal
                   </Typography>
+
                   <Typography
                     variant="h6"
                     color="#cfd8dc"
-                    sx={{ textAlign: "center", mb: 3 }}
+                    sx={{ textAlign: "center" }}
                   >
-                    {/* <Typed
-                      strings={[
-                        "Securing Applications",
-                        "Detecting Threats",
-                        "Engineering Resilience",
-                      ]}
-                      typeSpeed={60}
-                      backSpeed={30}
-                      loop
-                    /> */}
                     <Typewriter
                       options={{
                         strings: [
@@ -517,8 +514,8 @@ export default function App() {
                       }}
                     />
                   </Typography>
-                </motion.div>
-              </Box>
+                </Box>
+              </motion.div>
             </Box>
 
             {/* ABOUT */}
